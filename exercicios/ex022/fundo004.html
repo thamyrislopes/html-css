@@ -7,31 +7,37 @@
     <title>Fundo</title>
     <style>
 
-        body#fora {
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center bottom;
+        body {
+            height: 100vh;
+            /*background-image: url('imagens/wallpaper002.jpg');
+            background-color: black;
+            background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
-            position: relative;
-            margin: 0;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
         }
 
-        main#dentro {
+        main {
             background-color: white;
-            text-align: justify;
-            height: 1020px;
-            width: 400px;
-            margin: 0;
-            padding: 1026px 11px 9px 11px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
         }
 
     </style>
 </head>
-<body id="fora">
-    <main id="dentro">
+<body>
+    <main>
         <h1>Papel de parede</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quam consectetur veniam perspiciatis nulla recusandae vero corrupti doloremque? Alias suscipit odio consectetur, facere pariatur sunt iste ratione. Libero, vel provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores velit aperiam inventore debitis voluptatibus nemo quam modi aliquam quidem, blanditiis officiis distinctio perspiciatis a, sint saepe pariatur, beatae vel? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ratione veritatis optio placeat quia praesentium exercitationem quas quibusdam error, perspiciatis porro tenetur saepe magnam ea. Obcaecati praesentium aut tempore debitis!</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laborum est cum, debitis quam aspernatur delectus quo labore veniam asperiores beatae quos totam earum architecto pariatur nulla repudiandae, dolor rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error modi doloremque excepturi delectus odit unde corrupti tenetur. Voluptatem, dignissimos hic. Dolorem eos omnis ipsum tenetur quae quos quod dolorum nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, at hic? Quisquam adipisci ab asperiores non ducimus ex, placeat incidunt quibusdam, dicta temporibus labore cum soluta consequuntur fugit deserunt corrupti!</p>
