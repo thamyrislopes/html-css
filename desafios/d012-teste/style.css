@@ -10,7 +10,6 @@
 }
 
 body {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
@@ -55,6 +54,34 @@ main {
 
 main > p {
     margin-bottom: -300px;
+}
+
+#parallax1 {
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax1 > p {
+    background-color: black;
+    color: white;
+    width: max-content;
+}
+
+#parallax2 {
+    background-image: url('pacote-d012/imagens/background002.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax2 > p {
+    background-color: rgba(0, 0, 0, 0.514);
+    color: white;
+    width: max-content;
 }
 
 footer {
