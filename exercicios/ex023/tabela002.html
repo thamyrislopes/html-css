@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* Fixar os nomes das colunas da tabela que possui muitas linhas e/ou muitas colunas. */
         }
 
         td, th {
@@ -20,9 +21,25 @@
             padding: 10px;
         }
 
+        caption {
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /* Fixar os nomes das colunas da tabela que possui muitas linhas e/ou muitas colunas. */
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) /* Efeito Zebrado */ { 
+            background-color: lightgray;
         }
 
         td.num {
@@ -43,9 +60,10 @@
                 TR, TD, TH
     -->
     <table>
+            <caption>População de algumas Unidades Federativas</caption> <!-- Legenda -->
             <thead>
-                <th>Estado</th>
-                <th>População (2021)</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 132px;">População (2021)</th>
             </thead>
             <tbody>
                 <tr>
@@ -119,7 +137,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="num"><strong>192.531.168</strong></td>
                 </tr>
             </tfoot>
